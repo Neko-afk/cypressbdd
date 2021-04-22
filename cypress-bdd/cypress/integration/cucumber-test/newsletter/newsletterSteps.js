@@ -6,7 +6,7 @@ Given('User open main page', () => {
 })
 When('User submit valid email', () => {
 	cy.get('#newsletter-input').clear()
-	cy.get('#newsletter-input').type('maileexample@xyzcdex.com')
+	cy.get('#newsletter-input').type('maileexample@xyzcdexc.com')
 	cy.get('[name="submitNewsletter"]').should('be.visible').click()
 })
 Then('User see banner with positive added address', () => {
